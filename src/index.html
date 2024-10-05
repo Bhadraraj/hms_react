@@ -1,0 +1,1382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="Q41vXAiCn0HaDjP1uCjHIZVHe1pe7FPdL1OLq2HN">
+
+        <title>Shri Vidhya Mandhir</title>
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <!-- Livewire Styles -->
+<style >
+    [wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {
+        display: none;
+    }
+
+    [wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {
+        display:none;
+    }
+
+    [wire\:offline] {
+        display: none;
+    }
+
+    [wire\:dirty]:not(textarea):not(input):not(select) {
+        display: none;
+    }
+
+    input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {
+        animation-duration: 50000s;
+        animation-name: livewireautofill;
+    }
+
+    @keyframes livewireautofill { from {} }
+</style>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="https://shrividhyamandhir.com/css/styles.css">
+        <link rel="stylesheet" href="https://shrividhyamandhir.com/css/ui.css">
+
+        <!-- Scripts -->
+        <script src="/js/app.js" defer></script>
+   
+        <!-- Bootstrap CSS v5.2.0-beta1 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        
+    </head>
+    <body id="homePage" class="font-sans antialiased">
+
+                    
+        <div id="ms-main-content" class="min-h-screen">
+            
+            <!-- Page Content -->
+            <main>
+                <style>
+        .alert-danger {
+            font-size: 10px !important;
+            color: #842029 !important;
+            font-weight: 600;
+            margin: 8px 0px;
+        }
+        html, body {
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        #popup {
+            padding: 2rem;
+        }
+
+        .popupOverlay {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0px;
+            left: 0px;
+            z-index: 9999;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popupModel {
+            padding: 60px 70px 60px 90px;
+            border-radius: 20px;
+            background: #fff;
+            box-sizing: border-box;
+            max-width: 75vw;
+            height: auto;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, .1);
+            margin: 0 auto;
+        }
+            
+        #popup h3.serviceTitle {
+            margin-bottom: 30px !important;
+        }
+
+        @media (max-width:1366px) and (min-width:1200px) {
+            .popupModel {
+                padding: 40px 50px 40px 60px;
+                border-radius: 10px;
+                max-width: 90vw;
+            }
+        }
+
+        @media (max-width:1199px) and (min-width:992px) {
+
+            .popupModel {
+                padding: 45px 40px 25px 50px;
+                border-radius: 10px;
+                max-width: 85vw;
+            }
+
+        }
+
+
+        @media (max-width:991px) and (min-width:768px) {
+
+            .popupModel {
+                padding: 40px 40px 15px 40px;
+                border-radius: 10px;
+                max-width: 85vw;
+            }
+
+        }
+
+        @media (max-width:767px) and (min-width:500px) {
+
+            .popupModel {
+                padding: 40px 40px 15px 40px;
+                border-radius: 10px;
+                max-width: 90vw;
+                max-height: 550px;
+            }
+        }
+
+        @media (max-width:500px) and (min-width:320px) {
+
+            .popupModel {
+                padding: 35px 28px 25px 28px;
+                border-radius: 10px;
+                max-width: 96vw;
+                max-height: 600px;
+            }
+
+        }
+
+        @media    only screen and (min-width: 992px) {
+            #popup {
+                padding: 5rem;
+            }
+        }
+    </style>
+
+    <header class="position-absolute w-100 top-0 z-40">
+    <section class="topBarSec">
+        <div class="container">
+            <div class="row gx-0 topBar">
+                <div class="col-lg-6 col-md-5">
+                    <div class="topbarCall">
+                        <a href="tel:+919965553599">+91 9965553599</a>
+    
+                        <div class="topbarFollow">
+                            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href=""> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-6  col-md-7">
+                    <div class="subMenu">
+                        <a href="https://forms.gle/gsb4fCzcczYU3L6b6">Careers</a>
+                        <a href="../assets/Mandatory Disclosure Details _ SARAS 5.0 2.pdf">Public Disclosure</a>
+                        <a href="/#contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Topbar End Here -->
+    
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="images/Logo.svg" alt="" class="headerLogo">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://shrividhyamandhir.com">Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://shrividhyamandhir.com/infrastructure">Infrastructure</a>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Download TC</a></li>
+                            <li><a class="dropdown-item" href="https://shrividhyamandhir.com/curriculum">Curriculum</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://shrividhyamandhir.com/achievements">Achievements</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://shrividhyamandhir.com/events">Events</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://shrividhyamandhir.com/facilities">Facilities</a>
+                    </li>
+    
+                    <li class="nav-item mobile">
+                        <a class="nav-link" href="https://forms.gle/gsb4fCzcczYU3L6b6">Careers</a>
+                    </li>
+    
+                    <li class="nav-item mobile">
+                        <a class="nav-link" href="/assets/SVM SARAS.pdf">Public Disclosure</a>
+                    </li>
+    
+                    <li class="nav-item mobile">
+                        <a class="nav-link" href="/#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Nav End Here -->
+</header>
+<figure id="ms-carousel-1" class="ms-carousel-1 w-full relative d-none d-lg-block">
+            <div class="ms-carousel-inner h-full">
+            <div class="ms-carousel-item h-full active">
+                <img class="rad-home-banner" 
+                    src="https://shrividhyamandhir.com/images/bannerDesktop1.jpg" 
+                    alt="Shri Vidhya Mandhir banner">
+                <div class="vidhya-banner-overlay">
+                    <div class="container h-full">
+                        <div class="row h-full">
+
+                            <div class="col-lg-8 col-md-12 order-1 order-lg-0" id="bannerinfoContainer">
+                                <div class="bannerContent">
+                                    <h1>
+                                        <span class="mainFontSize">Here Comes</span>
+                                        <span class="mainFontSize big"> The Best</span>
+                                        <span class="mainFontSize">at your hometown</span>
+                                    </h1>
+                                    <p class="mainPara">Get a glimpse into the life of teachers, staff, students, and discover
+                                        the excellence of
+                                        the academic programmes offered in state-of-the-art infrastructure and facilities at
+                                        Shri Vidhya Mandhir.</p>
+                                    <a href="#" class="mainButton">See a Glimpse Video</a>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-4 col-md-12 displayBox order-0 order-lg-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ms-carousel-item h-full">
+                <img class="rad-home-banner" src="https://shrividhyamandhir.com/images/bannerDesktop2.jpg" alt="Shri Vidhya Mandhir banner">
+                <div class="vidhya-banner-overlay">
+                    <div class="container h-full">
+                         <div class="row h-full">
+
+                            <div class="col-lg-8 col-md-12 order-1 order-lg-0" id="bannerinfoContainer">
+                                <div class="bannerContent">
+                                    <h1>
+                                        <span class="mainFontSize">Here Comes</span>
+                                        <span class="mainFontSize big"> The Best</span>
+                                        <span class="mainFontSize">at your hometown</span>
+                                    </h1>
+                                    <p class="mainPara">Get a glimpse into the life of teachers, staff, students, and discover
+                                        the excellence of
+                                        the academic programmes offered in state-of-the-art infrastructure and facilities at
+                                        Shri Vidhya Mandhir.</p>
+                                    <a href="#" class="mainButton">See a Glimpse Video</a>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-4 col-md-12 displayBox order-0 order-lg-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ms-carousel-item h-full">
+                <img class="rad-home-banner" src="https://shrividhyamandhir.com/images/bannerDesktop3.jpg" alt="Shri Vidhya Mandhir banner">
+                <div class="vidhya-banner-overlay">
+                    <div class="container h-full">
+                         <div class="row h-full">
+
+                            <div class="col-lg-8 col-md-12 order-1 order-lg-0" id="bannerinfoContainer">
+                                <div class="bannerContent">
+                                    <h1>
+                                        <span class="mainFontSize">Here Comes</span>
+                                        <span class="mainFontSize big"> The Best</span>
+                                        <span class="mainFontSize">at your hometown</span>
+                                    </h1>
+                                    <p class="mainPara">Get a glimpse into the life of teachers, staff, students, and discover
+                                        the excellence of
+                                        the academic programmes offered in state-of-the-art infrastructure and facilities at
+                                        Shri Vidhya Mandhir.</p>
+                                    <a href="#" class="mainButton">See a Glimpse Video</a>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-4 col-md-12 displayBox order-0 order-lg-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    
+        <a id="ms-carouselPrev" class="w-6 2xs:w-8 xs:w-12 md:w-16 ms-carousel-control-prev" href="#ms-carousel1" role="button">
+            <span class="ms-carousel-control-prev-icon dark:filter-none" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a id="ms-carouselNext" class="w-6 2xs:w-8 xs:w-12 md:w-16 ms-carousel-control-next" href="#ms-carousel1" role="button">
+            <span class="ms-carousel-control-next-icon dark:filter-none" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </figure> <!-- Banner End Here -->
+
+<figure id="ms-carousel-mobile" class="ms-carousel-mobile w-full relative d-lg-none">
+            <div class="ms-carousel-mobile-inner h-full">
+            <div class="ms-carousel-mobile-item h-full active">
+                <img class="rad-home-banner" 
+                    src="https://shrividhyamandhir.com/images/bannerMobile1.jpg" 
+                    alt="Shri Vidhya Mandhir banner"
+                    >
+                <div class="vidhya-banner-overlay">
+                    <div class="container h-full">
+                        <div class="row h-full justify-content-center">
+
+                            <div class="col-lg-8 col-md-12 col-9 order-1 order-lg-0" id="bannerinfoContainer">
+                                <div class="bannerContent">
+                                    <h1>
+                                        <span class="mainFontSize">Here Comes</span>
+                                        <span class="mainFontSize big"> The Best</span>
+                                        <span class="mainFontSize">at your hometown</span>
+                                    </h1>
+                                    <p class="mainPara">Get a glimpse into the life of teachers, staff, students, and discover
+                                        the excellence of
+                                        the academic programmes offered in state-of-the-art infrastructure and facilities at
+                                        Shri Vidhya Mandhir.</p>
+                                    <a href="#" class="mainButton">See a Glimse Video</a>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-4 col-md-12 displayBox order-0 order-lg-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ms-carousel-mobile-item h-full">
+                <img class="rad-home-banner" 
+                     src="https://shrividhyamandhir.com/images/bannerMobile2.jpg" 
+                     alt="Shri Vidhya Mandhir banner"
+                     >
+                <div class="vidhya-banner-overlay">
+                    <div class="container h-full">
+                         <div class="row h-full justify-content-center">
+
+                            <div class="col-lg-8 col-md-12 col-9 order-1 order-lg-0" id="bannerinfoContainer">
+                                <div class="bannerContent">
+                                    <h1>
+                                        <span class="mainFontSize">Here Comes</span>
+                                        <span class="mainFontSize big"> The Best</span>
+                                        <span class="mainFontSize">at your hometown</span>
+                                    </h1>
+                                    <p class="mainPara">Get a glimpse into the life of teachers, staff, students, and discover
+                                        the excellence of
+                                        the academic programmes offered in state-of-the-art infrastructure and facilities at
+                                        Shri Vidhya Mandhir.</p>
+                                    <a href="#" class="mainButton">See a Glimse Video</a>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-4 col-md-12 displayBox order-0 order-lg-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ms-carousel-mobile-item h-full">
+                <img class="rad-home-banner" 
+                     src="https://shrividhyamandhir.com/images/bannerMobile3.jpg" 
+                     alt="Shri Vidhya Mandhir banner"
+                     >
+                <div class="vidhya-banner-overlay">
+                    <div class="container h-full">
+                         <div class="row h-full justify-content-center">
+
+                            <div class="col-lg-8 col-md-12 col-9 order-1 order-lg-0" id="bannerinfoContainer">
+                                <div class="bannerContent">
+                                    <h1>
+                                        <span class="mainFontSize">Here Comes</span>
+                                        <span class="mainFontSize big"> The Best</span>
+                                        <span class="mainFontSize">at your hometown</span>
+                                    </h1>
+                                    <p class="mainPara">Get a glimpse into the life of teachers, staff, students, and discover
+                                        the excellence of
+                                        the academic programmes offered in state-of-the-art infrastructure and facilities at
+                                        Shri Vidhya Mandhir.</p>
+                                    <a href="#" class="mainButton">See a Glimse Video</a>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-4 col-md-12 displayBox order-0 order-lg-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        
+        <a id="ms-carouselPrev-mobile" class="w-6 2xs:w-8 xs:w-12 md:w-16 ms-carousel-control-prev" href="#ms-carousel-mobile" role="button">
+            <span class="ms-carousel-control-prev-icon dark:filter-none" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a id="ms-carouselNext-mobile" class="w-6 2xs:w-8 xs:w-12 md:w-16 ms-carousel-control-next" href="#ms-carousel-mobile" role="button">
+            <span class="ms-carousel-control-next-icon dark:filter-none" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </figure> <!-- Banner End Here -->
+    <section class="aboutSec" id="aboutSec">
+        <div class="container">
+            <div class="row aboutUs">
+                <div class="col-lg-7 order-1 order-lg-0 aboutMainBlock">
+                    <div class="aboutBlock">
+                        <h1 class="secMainTle">OUR STORY</h1>
+
+
+                        <div class="aboutTab">
+                            <ul class="nav nav-tabs d-flex justify-content-between" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="about-tab" data-bs-toggle="tab"
+                                        data-bs-target="#about-tab-pane" type="button" role="tab"
+                                        aria-controls="about-tab-pane" aria-selected="true">About Us</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="vision-tab" data-bs-toggle="tab"
+                                        data-bs-target="#vision-tab-pane" type="button" role="tab"
+                                        aria-controls="vision-tab-pane" aria-selected="false">Vision</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="mission-tab" data-bs-toggle="tab"
+                                        data-bs-target="#mission-tab-pane" type="button" role="tab"
+                                        aria-controls="mission-tab-pane" aria-selected="false">Mission</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="motto-tab" data-bs-toggle="tab"
+                                        data-bs-target="#motto-tab-pane" type="button" role="tab"
+                                        aria-controls="motto-tab-pane" aria-selected="false">Motto</button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="about-tab-pane" role="tabpanel"
+                                    aria-labelledby="about-tab" tabindex="0">
+                                    <p class="mainPara">At Shri Vidhya Mandhir children will have the freedom of
+                                        learning
+                                        according to their
+                                        wish and taste, so that they will become independent learners.</p>
+                                    <p>The approach to education is inquiry-based, collaborative and Project-based learning with interdisciplinary and multidisciplinary aspects
+                                        reflecting
+                                        global perception in school learning.</p>
+                                    <p>
+                                        Beyond the curriculum we impart holistic development of the children to mould them
+                                        to be
+                                        accomplished human beings. Conducive atmosphere at our school prepares the
+                                        children to face challenges in 21st century learning and makes them
+                                        creators.
+                                    </p>
+
+                                </div>
+                                <div class="tab-pane fade" id="vision-tab-pane" role="tabpanel"
+                                    aria-labelledby="vision-tab" tabindex="0">
+                                    <p>To provide quality education in a safe environment, conducive to learning. To
+                                        implement successful programs that produce lasting results and be one of the
+                                        finest schools in our nation producing respectful citizens to uphold the honour
+                                        and the dignity of our motherland.</p>
+                                </div>
+                                <div class="tab-pane fade" id="mission-tab-pane" role="tabpanel"
+                                    aria-labelledby="mission-tab" tabindex="0">
+                                    <p>To reach out technology-based holistic education by recruiting dedicated and
+                                        highly motivated professionals. The approach to education is inquiry-based,
+                                        collaborative with inter-disciplinary and multi-disciplinary aspects that
+                                        reflect global perception in school learning.</p>
+                                </div>
+                                <div class="tab-pane fade" id="motto-tab-pane" role="tabpanel"
+                                    aria-labelledby="motto-tab" tabindex="0">
+                                    <p class="mainPara">EMPOWERING EVERY CHILD</p>
+                                    <p>Every child is unique and blessed with varied potential. Our aim is to identify,
+                                        unleash and enhance his/her unique potential thereby empowering every child.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Col End Here -->
+
+
+                <div class="col-lg-5 mainFeatureBlock order-0 order-lg-1">
+                    <div class="row gy-5 gx-2" id="mainFBlock">
+                        <div class="col-6">
+                            <div class="mainFBlock EcAct">
+                                <h2>25+</h2>
+                                <p class="mainPara">Extra <br>
+                                    Curricular<br>
+                                    Activities</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="mainFBlock AcaExe">
+                                <h2>5+</h2>
+                                <p class="mainPara">Years Of <br>
+                                    Academic<br>
+                                    Excellance</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="mainFBlock StuTeach">
+                                <h2>1:30</h2>
+                                <p class="mainPara">Student <br>
+                                    Teacher<br>
+                                    Ratio</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="mainFBlock schCamp">
+                                <h2>7+</h2>
+                                <p class="mainPara">Acres Of <br>
+                                    School<br>
+                                    Campus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- AboutUs End Here -->
+
+    <section class="glimseSec">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="glimseBlock">
+                    <!--  <a> <i class="fa fa-play-circle" aria-hidden="true"></i></a> -->
+                    <h1>A GLIMPSE OF SHRI VIDHYA MANDHIR</h1>
+                    <h5>One of India’s finest international CBSE schools</h5>
+                    <video autoplay muted>
+                        <source src="assets/My Video.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </section> <!-- Glimse End Here -->
+
+    <section class="circularSec" id="circularSec">
+        <div class="container">
+            <h1 class="secMainTle circulars">RECENT CIRCULARS</h1>
+
+            <div class="row pt-5">
+                <div class="row pt-5">
+                                            <div class="col-lg-4 col-md-6">
+                            <div class="circularBlock">
+                                <p class="circularNo">Circular 3</p>
+                                <h3 class="circularFor"> Pre-KG admissions are now open! </h3>
+                                <p class="circularDate"> (Fri) 04 Oct, 2024 </p>
+    
+                                <p class="circularInfo">Exciting news! Pre-KG admissions are now open! Give your little one a bright start to their educational journey. Limited seats—apply now!</p>
+                                <button class="btn" data-title="Pre-KG admissions are now open!" data-body="Pre - KG Admissions Open!✏️🖍️🖋️
+
+Looking for the best destination for your child&#039;s educational journey? Look no further!
+
+Give your child the gift of a bright future. Admission for Pre - KG is now open!✨✨✨✨🌟">Read More</button>
+                            </div>
+                        </div>
+                                            <div class="col-lg-4 col-md-6">
+                            <div class="circularBlock">
+                                <p class="circularNo">CIRCULAR - 2</p>
+                                <h3 class="circularFor"> Pre - KG Admission Open!✏️🖍️🖋️ </h3>
+                                <p class="circularDate"> (Mon) 16 Sep, 2024 </p>
+    
+                                <p class="circularInfo">Pre - KG Admission Open</p>
+                                <button class="btn" data-title="Pre - KG Admission Open!✏️🖍️🖋️" data-body="🔆Exciting News!🔆
+
+Pre - KG Admission Open!✏️🖍️🖋️
+
+Looking for the best destination for your child&#039;s educational journey? Look no further!
+
+Our school is dedicated to providing a nurturing environment, expert teachers, and a comprehensive curriculum that fosters holistic growth.
+
+Give your child the gift of a bright future. Admission for Pre - KG is now open!✨✨✨✨🌟">Read More</button>
+                            </div>
+                        </div>
+                                            <div class="col-lg-4 col-md-6">
+                            <div class="circularBlock">
+                                <p class="circularNo">CIRCULAR - 1</p>
+                                <h3 class="circularFor"> SCHOOL RE-OPEN </h3>
+                                <p class="circularDate"> (Mon) 10 Jun, 2024 </p>
+    
+                                <p class="circularInfo">The school re-opens on 10th June 2024</p>
+                                <button class="btn" data-title="SCHOOL RE-OPEN" data-body="Dear Students,
+ We&#039;re thrilled to announce that school reopens on June 10th, 2024 , marking the end of the summer break! 🌞 Get ready to dive back into learning, reconnect with friends, and create new memories together. We can&#039;t wait to see you all again and embark on another exciting academic journey! 
+
+🎒Remember to pack your enthusiasm, curiosity, and determination as we gear up for an amazing year ahead. Let&#039;s make the most of every opportunity and strive for excellence together!
+
+See you soon!">Read More</button>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </section> <!-- Circular End Here -->
+
+    <section class="corMessageSec" id="corMessageSec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="correspondentsImgBLock">
+                        <img src="images/Correspondent .png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-7 g-0">
+                    <div class="correspondentBlock">
+                        <h1 class="secMainTle correspondent">THE CORRESPONDENT'S MESSAGE</h1>
+                        <p class="mainPara quoate">Humility and character are learned <br> Love and knowledge rule the
+                            universe.
+                            "</p>
+
+                        <p class="message">Shri Vidhya Mandhir has been established to revive the belief that
+                            'educational institutions
+                            can
+                            create a higher society. In today's environment, we provide education with all the
+                            facilities
+                            available in developed city schools with advanced technology. The Sixth Academic Year is
+                            now
+                            underway with 1500 students. This has been possible with the support of our loving parents
+                            and
+                            motivating teachers under the guidance of our school’s charismatic principal to implement
+                            these
+                            well. It is great that our children have made so many achievements internationally and
+                            nationally in such a short period and have brought pride to the school. I hope they will
+                            achieve
+                            more in various fields.</p>
+
+                        <p class="message">To improve the mental strength, physical strength, and language skills of the
+                            students,
+                            various
+                            trainings are being imparted. There is no doubt that SVM School students will rise to become
+                            outstanding citizens in the future!</p>
+
+                        <p>VEERA. S.T. SAMINATHAN<br>
+                            CORRESPONDENT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Correspontant End Here -->
+
+    <section class="prinMessageSec" id="prinMessageSec">
+        <div class="container">
+            <div class="row d-flex align-items-end">
+
+                <div class="col-xl-7 col-lg-7 g-0">
+                    <div class="principalBlock">
+                        <h1 class="secMainTle principal">THE PRINCIPAL'S MESSAGE</h1>
+                        <p class="mainPara quoate">Pranams. Shri Vidhya Mandhir aims to inculcate values and impart
+                            technology - based education to enable the present generation to thrive in the global
+                            village.
+                            "</p>
+
+                        <p class="message">We work true to our motto 'Empowering Every Child' - a call to raise,
+                            illuminate, facilitate, and nurture the latent skills of every young mind to help them in
+                            all walks of life as we understand the impact of school life on an individual. Our Logo with
+                            the mighty pen symbolizing knowledge and the air below, symbolizing the 'cosmic breath',
+                            serves to remind us that education is the breath of life and drives us to reach the acme. We
+                            strive to ensure holistic development by fostering a conducive environment for academic
+                            excellence, physical, social, and moral well-being among students. I thank the Almighty
+                            for blessing me to be the founder Principal of this esteemed organization heading a strength
+                            of 1500 students and ninety staff.</p>
+
+                        <p class="message">I pray that the dedicated work of the teaching fraternity progresses in the
+                            right direction in all aspects of academic, sports, and co-curricular activities to produce
+                            worthy citizens leading the school to be one of the finest schools in this great homeland.
+                        </p>
+
+                        <p>B.VASANTHA SEVANAN<br>
+                            PRINCIPAL</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-5 col-lg-5">
+                    <div class="principalImgBLock">
+                        <img src="images/Principal.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Principal End Here -->
+
+    <section class="admissionSec" id="admissionSec">
+        <div class="container">
+            <div class="row d-flex align-items-center g-0">
+                <div class="col-xxl-8 col-xl-9 col-lg-11 col-12">
+                    <div class="admissionBlock">
+                        <h1 class="secMainTle admission">ADMISSION FORM</h1>
+                        <p>Please fill out the form below, and our admission coordinator will reach out to you.</p>
+                                                
+                        <form action="https://shrividhyamandhir.com/enquiries" class="admissionFormBlock" method="POST">
+                            <input type="hidden" name="_token" value="Q41vXAiCn0HaDjP1uCjHIZVHe1pe7FPdL1OLq2HN">                            <div class="row g-2">
+
+                                <div class="col-md-6">
+                                    <div class="inputBlock">
+                                        <input type="text" name="name" placeholder="" autocomplete="off" class="form__input" value="" required>
+                                        <label class="form__label">Name</label>
+                                    </div>
+                                                                    </div>
+                                <div class="col-md-6">
+                                    <div class="inputBlock select">
+                                        <select name="class" id="admissionFor">
+                                            <option selected="true" disabled="disabled">Admission Class</option>
+                                            <option value="PreKG">PreKG</option>
+                                            <option value="LKG">LKG</option>
+                                            <option value="UKG">UKG</option>
+                                            <option value="Class I">Class I</option>
+                                            <option value="Class II">Class II</option>
+                                            <option value="Class III">Class III</option>
+                                            <option value="Class IV">Class IV</option>
+                                            <option value="Class V">Class V</option>
+                                            <option value="Class VI">Class VI</option>
+                                            <option value="Class VII">Class VII</option>
+                                            <option value="Class VIII">Class VIII</option>
+                                            <option value="Class IX">Class IX</option>
+                                            <option value="Class X">Class X</option>
+                                            <option value="Class XI">Class XI</option>
+                                            <option value="Class XII">Class XII</option>
+                                        </select>
+                                    </div>
+                                                                    </div>
+
+                                <div class="col-md-6">
+                                    <div class="inputBlock">
+                                        <input type="text" name="age" placeholder="" autocomplete="off" class="form__input" value="" required>
+                                        <label class="form__label">Age ( As on 1st July )</label>
+                                    </div>
+                                                                    </div>
+                                <div class="col-md-3">
+                                    <div class="inputBlock">
+                                        <input type="date" name="dob" placeholder="" id="date" value="">
+                                        <label class="form__label">Date of Birth</label>
+                                    </div>
+                                                                    </div>
+                                <div class="col-md-3">
+                                    <div class="inputBlock">
+                                        <select name="gender" id="gender">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                                                    </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="inputBlock">
+                                        <input type="text" name="address1" placeholder="" value="" autocomplete="off" class="form__input" required>
+                                        <label class="form__label">Address First Line</label>
+                                    </div>
+                                                                    </div>
+                                <div class="col-md-6">
+                                    <div class="inputBlock">
+                                        <input type="text" name="address2" placeholder="" value="" autocomplete="off" class="form__input" required>
+                                        <label class="form__label">Address Second Line</label>
+                                    </div>
+                                                                    </div>
+
+
+                                <div class="col-md-3">
+                                    <div class="inputBlock">
+                                        <select name="city" id="City">
+                                            <option value="" selected="true" disabled="disabled">City</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Coimbatore">Coimbatore</option>
+                                            <option value="Dindigul">Dindigul</option>
+                                            <option value="Karur">Karur</option>
+                                            <option value="Palani">Palani</option>
+                                            <option value="Pollachi">Pollachi</option>
+                                            <option value="Madurai">Madurai</option>
+                                            <option value="Salem">Salem</option>
+                                            <option value="Tirupur">Tirupur</option>
+                                            <option value="Trichy">Trichy</option>
+                                            <option value="Other">Other</option>
+                                            
+                                            
+                                        </select>
+                                    </div>
+                                                                    </div>
+                                <div class="col-md-3">
+                                    <div class="inputBlock">
+                                        <select name="state" id="State">
+                                            <option value="" selected="true" disabled="disabled">State</option>
+                                            <option value="Tamilnadu">Tamilnadu</option>
+                                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                            <option value="Telangana">Telangana</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="Kerala">Kerala</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                                                    </div>
+
+
+                                <div class="col-md-3">
+                                    <div class="inputBlock">
+                                        <select name="country" id="Country">
+                                            <option value="" selected="true" disabled="disabled">Country</option>
+                                            <option value="India (Resident)">India (Resident)</option>
+                                            <option value="NRI">NRI</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                                                    </div>
+                                <div class="col-md-3">
+                                    <div class="inputBlock">
+                                        <input type="text" name="pincode" placeholder="" autocomplete="off" class="form__input" value="" required>
+                                        <label class="form__label">Pincode</label>
+                                    </div>
+                                                                    </div>
+
+
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="inputBlock">
+                                        <input type="text" name="parent_name" placeholder="" autocomplete="off" class="form__input" value="" required>
+                                        <label class="form__label">Parent Name</label>
+                                    </div>
+                                                                    </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class=" inputBlock">
+                                        <div id="parent" class="d-flex">
+                                            <label for="Parent">
+                                                <input type="radio" name="guardian_type" value="Father">
+                                                Father
+                                            </label>
+                                            <label for="Parent">
+                                                <input type="radio" name="guardian_type" value="Mother">
+                                                Mother
+                                            </label>
+                                            <label for="Parent">
+                                                <input type="radio" name="guardian_type" value="Guardian">
+                                                Guardian
+                                            </label>
+                                        </div>
+                                    </div>
+                                                                    </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="inputBlock">
+                                        <input type="text" name="phone" placeholder="" autocomplete="off" class="form__input" value="" required>
+                                        <label class="form__label">Mobile No</label>
+                                    </div>
+                                                                    </div>
+                                <div class="col-md-6">
+                                    <div class="inputBlock">
+                                        <input type="text" name="email" placeholder="" autocomplete="off" class="form__input" value="" required>
+                                        <label class="form__label">Email</label>
+                                    </div>
+                                                                    </div>
+
+
+                                <div class="col-md-12">
+                                    <div class="inputBlock">
+                                        <select name="survey" id="survey">
+                                            <option value="" selected disabled> How did you know about SVM?</option>
+                                            <option value="From Google">From Google</option>
+                                            <option value="From Facebook">From Facebook</option>
+                                            <option value="Friends Of Friends">Friends Of Friends</option>
+                                            <option value="My Own Refrence">My Own Refrence</option>
+                                        </select>
+                                    </div>
+                                                                    </div>
+
+                                <input type="submit" value="REGISTER" id="submitBtn">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contactSec">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.5289990536835!2d77.40678271531537!3d10.53771416643466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9dacefd750ec3%3A0xe36841b36c259108!2sShri%20Vidhya%20Mandhir%20(CBSE)!5e0!3m2!1sen!2sin!4v1658332005794!5m2!1sen!2sin"
+            style="border:0;" allowfullscreen="off" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="contactBlock">
+            <h1 class="secMainTle contact">CONTACT US</h1>
+
+            <div class="contactSetBlock">
+                <div class="contactSet">
+                    <div class="conIcon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="conData">
+                        <h5>Call Us</h5>
+                        <p><a href="tel:+91 9361892872"> +91 9361892872</a></p>
+                        <p><a href="tel:+91 9965553599"> +91 99655 53599</a></p>
+                    </div>
+                </div>
+
+
+                <div class="contactSet">
+                    <div class="conIcon">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div class="conData">
+                        <h5>Mail Us</h5>
+                        <p><a href="mailto:shrividhyamandhir@gmail.com">shrividhyamandhir@gmail.com</a></p>
+                        <p><a href="mailto:career@shrividhyamandhir.com">career@shrividhyamandhir.com</a></p>
+                        <p><a href="mailto:admissions@shirividhyamandhir.com">admissions@shirividhyamandhir.com</a></p>
+                    </div>
+                </div>
+
+
+                <div class="contactSet">
+                    <div class="conIcon location">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div class="conData">
+                        <h5>Find Us</h5>
+                        <p>Udumalpet - Palani Highway, Pushpathur,
+                            Palani 624 618. Dindigul (Dist)</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            </main>
+        </div>
+
+        <section class="footerSec">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-lg-4">
+                <div class="col d-flex flex-column justify-content-between footerinfoSet">
+
+                    <img src="./images/FooterLogo.svg" alt="" class="img-fluid footerLogo">
+
+                    <ul class="followSet">
+                        <li>Follow Us</li>
+                        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                    <p>&copy;copyrights 2022 & All Rights Reserved
+                        For www.shrividhyamandhir.com</p>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="row">
+
+                    <div class="col-3 footerMenuBlock">
+                        <div class="footerMenuSet">
+                            <ul>
+                                <li class="footerMenu">Our School</li>
+                                <li><a href="https://shrividhyamandhir.com/">Home</a></li>
+                                <li><a href="/#aboutSec">About Us </a></li>
+                                <li><a href="/#aboutSec">Vision</a></li>
+                                <li><a href="/#aboutSec">Mission</a></li>
+                                <li><a href="/#aboutSec">Motto</a></li>
+                                <li><a href="/#circularSec">Circulars</a></li>
+                                <li><a href="https://shrividhyamandhir.com/achievements">Achievements</a></li>
+                                <li><a href="https://shrividhyamandhir.com/infrastructure">Infrastructure</a></li>
+                                <li><a href="https://shrividhyamandhir.com/events">Events</a></li>
+                                <li><a href="">Download TC</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-3 footerMenuBlock">
+                        <div class="footerMenuSet">
+                            <ul>
+                                <li class="footerMenu">Academics</li>
+                                <li><a href="https://shrividhyamandhir.com/curriculum">Kindergarten</a></li>
+                                <li><a href="https://shrividhyamandhir.com/curriculum">Primary</a></li>
+                                <li><a href="https://shrividhyamandhir.com/curriculum">Secondary</a></li>
+                                <li><a href="https://shrividhyamandhir.com/curriculum">Senior Secondary</a></li>
+                            </ul>
+
+                            <ul>
+                                <li class="footerMenu">For Admission</li>
+                                <li><a href="#admissionSec">Kindergarten</a></li>
+                                <li><a href="#admissionSec">Primary</a></li>
+                                <li><a href="#admissionSec">Secondary</a></li>
+                                <li><a href="#admissionSec">Senior Secondary</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-3 footerMenuBlock">
+                        <div class="footerMenuSet">
+                            <ul>
+                                <li class="footerMenu">Facilities</li>
+                                <li><a href="https://shrividhyamandhir.com/facilities">Class Rooms</a></li>
+                                <li><a href="https://shrividhyamandhir.com/facilities">Smart Class</a></li>
+                                <li><a href="https://shrividhyamandhir.com/facilities">Library</a></li>
+                                <li><a href="https://shrividhyamandhir.com/facilities">Laboratories</a></li>
+                                <li><a href="https://shrividhyamandhir.com/facilities">Visual & Art Studio</a></li>
+                                <li><a href="https://shrividhyamandhir.com/facilities">Hostel</a></li>
+                                <li><a href="https://shrividhyamandhir.com/facilities">Transport</a></li>
+                                <li><a href="https://shrividhyamandhir.com/facilities">Food Menu</a></li>
+                                <li><a href="https://shrividhyamandhir.com/facilities">Ground</a></li>
+                                <li><a href="https://shrividhyamandhir.com/facilities">Results</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-3  footerMenuBlock">
+                        <div class="footerMenuSet">
+                            <ul>
+                                <li class="footerMenu">Public Disclosure</li>
+                                <li><a href="">School </a></li>
+                                <li><a href="">Faculty</a></li>
+                                <li><a href="">Staffs</a></li>
+                                <li><a href="">Academic</a></li>
+                                <li><a href="">Infrastructure</a></li>
+                                <li><a href="">Location</a></li>
+                                <li><a href="">Transport</a></li>
+                                <li><a href="">Other Vital</a></li>
+                                <li><a href="">Correspondent</a></li>
+                                <li><a href="">Principal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <div class="row d-flex justify-content-between g-0 p-0 footerCopy">
+            <div class="col-xl-6 col">
+                <p>Designed & Developed by <a href="#">&nbsp;Sree Maghizhmadhi Media Works &nbsp;</a> & <a href="#">
+                        &nbsp; MandraledStudios </a></p>
+            </div>
+            <div class="col-xl-6 col-lg-5 text-lg-end">
+                <p>Reach Your Brand successful for <a href="tel:9080909481">&nbsp; +91 9080909481</a>
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</section>
+        
+        <!-- Livewire Scripts -->
+
+<script src="/livewire/livewire.js?id=de3fca26689cb5a39af4" data-turbo-eval="false" data-turbolinks-eval="false" ></script>
+<script data-turbo-eval="false" data-turbolinks-eval="false" >
+    if (window.livewire) {
+	    console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.')
+	}
+
+    window.livewire = new Livewire();
+    window.livewire.devTools(true);
+    window.Livewire = window.livewire;
+    window.livewire_app_url = '';
+    window.livewire_token = 'Q41vXAiCn0HaDjP1uCjHIZVHe1pe7FPdL1OLq2HN';
+
+	/* Make sure Livewire loads first. */
+	if (window.Alpine) {
+	    /* Defer showing the warning so it doesn't get buried under downstream errors. */
+	    document.addEventListener("DOMContentLoaded", function () {
+	        setTimeout(function() {
+	            console.warn("Livewire: It looks like AlpineJS has already been loaded. Make sure Livewire\'s scripts are loaded before Alpine.\\n\\n Reference docs for more info: http://laravel-livewire.com/docs/alpine-js")
+	        })
+	    });
+	}
+
+	/* Make Alpine wait until Livewire is finished rendering to do its thing. */
+    window.deferLoadingAlpine = function (callback) {
+        window.addEventListener('livewire:load', function () {
+            callback();
+        });
+    };
+
+    let started = false;
+
+    window.addEventListener('alpine:initializing', function () {
+        if (! started) {
+            window.livewire.start();
+
+            started = true;
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (! started) {
+            window.livewire.start();
+
+            started = true;
+        }
+    });
+</script>
+
+        <script>
+
+    let currentItem = 0;
+    let currentItem2 = 0;
+    let isActive = true;
+    let isActive2 = true;
+    let carousel, items, carousel2, items2;
+        
+    window.addEventListener("load", function(){
+        Array.from(document.querySelectorAll(".circularSec .circularBlock button.btn")).forEach(
+            more => {
+                more.addEventListener("click", function(ev){
+                    ev.preventDefault();
+                    createOverlay(more.dataset.body, more.dataset.title);
+                }, false);
+            }
+        );
+    }, false);
+
+    function createOverlay(body, title) {
+        let overlay = document.createElement("div");
+        overlay.id = "overlay";
+        let overlayStyle = {
+            position: "fixed",
+            width: "100vw",
+            height: "100vh",
+            top: "0px",
+            left: "0px",
+            zIndex: "9999",
+            background: "rgba(0,0,0,0.5)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+        }
+        Object.assign(overlay.style, overlayStyle);
+
+        let popup = document.createElement("div");
+        popup.id = "popup";
+        popup.classList.add("popupModel");
+        let popupStyle = {
+            maxWidth: "90%",
+            maxHeight: "80vh",
+            position: "relative",
+            background: "rgba(255,255,255)",
+            boxShadow: "0px 0px 6px rgba(0,0,0,0.4)",
+            borderRadius: "1rem"
+        };
+
+        let closeBtn = document.createElement("button");
+        closeBtn.id = "closeBtn";
+        closeBtn.innerHTML = "x";
+        let closeBtnStyle = {
+            position: "absolute",
+            top: "4px",
+            right: "4px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            background: "rgba(255,255,255)",
+            width: "2.5rem",
+            height: "2.5rem",
+            fontSize: "1.3rem",
+            color: "#111",
+            border: "none"
+        };
+
+        let underlineStyle = {
+            display: "block",
+            width: "50px",
+            height: "4px",
+            backgroundColor: "#007BFF",
+            borderRadius: "2rem",
+            margin: "0.6rem 0 2rem 0"
+        };
+
+        let headingStyle = {
+            fontSize: "2.5rem",
+            fontWeight: "500"
+        };
+
+        Object.assign(closeBtn.style, closeBtnStyle);
+        popup.appendChild(closeBtn);
+
+        let formattedTitle = 
+            `<h2 class="serviceTitle">
+                ${title}
+            </h2>
+            <div class="underline"> </div>
+            `;
+
+        popup.innerHTML += formattedTitle + '<pre>'+body+'</pre>';
+        Object.assign(popup.querySelector(".serviceTitle").style, headingStyle);
+        Object.assign(popup.querySelector(".underline").style, underlineStyle);
+        Object.assign(popup.style, popupStyle);
+
+        overlay.appendChild(popup);
+        document.body.appendChild(overlay);
+
+        document.getElementById("closeBtn").addEventListener("click", function(){
+            document.getElementById("overlay").parentNode.removeChild(document.getElementById("overlay"));
+        }, false);
+    }
+    
+    function msWaitForTarget() {
+    
+        carousel = document.getElementById('ms-carousel-1');
+        items = document.querySelectorAll('.ms-carousel-item');
+        
+        carousel2 = document.getElementById('ms-carousel-mobile');
+        items2 = document.querySelectorAll('.ms-carousel-mobile-item');
+        
+        if(!carousel || !items || !carousel2 || !items2) {
+            setTimeout(msWaitForTarget, 500);
+            return;
+        }
+        
+        setInterval( ()=> {
+            changeBanner1(items, 'to-left', 'from-right');
+        }, 6000);
+        
+        document.getElementById('ms-carouselPrev').addEventListener('click', function(e) {
+            e.preventDefault()
+            changeBanner1(items, 'to-right', 'from-left');
+            
+        });
+    
+        document.getElementById('ms-carouselNext').addEventListener('click', function(e) {
+            e.preventDefault()
+            changeBanner1(items, 'to-left', 'from-right');
+        });
+        
+        
+        document.getElementById('ms-carouselPrev-mobile').addEventListener('click', function(e) {
+            e.preventDefault()
+            changeBanner2(items2, 'to-right', 'from-left');
+            
+        });
+    
+        document.getElementById('ms-carouselNext-mobile').addEventListener('click', function(e) {
+            e.preventDefault()
+            changeBanner2(items2, 'to-left', 'from-right');
+        });
+        
+    }
+
+    function setCurrentItem1(index) {
+        currentItem = (index + items.length) % items.length;
+    }
+
+    function hideItem1(direction) {
+        isActive = false;
+        items[currentItem].classList.add(direction);
+        items[currentItem].addEventListener('animationend', function() {
+            this.classList.remove('active', direction);
+        });
+    }
+
+    function showItem1(direction) {
+        items[currentItem].classList.add('next', direction);
+        items[currentItem].addEventListener('animationend', function() {
+            this.classList.remove('next', direction);
+            this.classList.add('active');
+            isActive = true;
+        });
+    }
+    
+    function setCurrentItem2(index) {
+        currentItem2 = (index + items2.length) % items2.length;
+    }
+
+    function hideItem2(direction) {
+        isActive2 = false;
+        items2[currentItem2].classList.add(direction);
+        items2[currentItem2].addEventListener('animationend', function() {
+            this.classList.remove('active', direction);
+        });
+    }
+
+    function showItem2(direction) {
+        items2[currentItem2].classList.add('next', direction);
+        items2[currentItem2].addEventListener('animationend', function() {
+            this.classList.remove('next', direction);
+            this.classList.add('active');
+            isActive2 = true;
+        });
+    }
+
+    function changeBanner1(items, direction1, direction2) {
+        if (isActive) {
+            hideItem1(direction1);
+            setCurrentItem1(currentItem - 1);
+            showItem1(direction2);
+        }
+    }
+    
+    function changeBanner2(items2, direction1, direction2) {
+        if (isActive2) {
+            hideItem2(direction1);
+            setCurrentItem2(currentItem2 - 1);
+            showItem2(direction2);
+        }
+    }
+    
+    msWaitForTarget();
+
+    
+</script>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
